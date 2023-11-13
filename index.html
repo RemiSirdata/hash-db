@@ -1,10 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="fr" data-bs-theme="auto">
 <head>
-    <meta charset="UTF-8">
-    <title>sha256 hash</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.118.2">
+    <title>Hash sha256</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="assets/style/sign-in.css" rel="stylesheet">
 </head>
-<body>
+<body class="d-flex align-items-center py-4 bg-body-tertiary">
+
+<main class="form-signin w-100 m-auto">
+    <form id="uploadForm">
+        <div class="mb-3 text-center">
+            <img src="assets/img/appicon.png" alt="" width="150" height="150">
+        </div>
+        <div class="mb-3 text-center">
+            <label for="fileForUpload" class="form-label">Sélectionnez votre fichier</label>
+            <input class="form-control" type="file" id="fileForUpload">
+        </div>
+        <button class="btn btn-primary w-100 py-2" type="submit">Hasher mon fichier</button>
+    </form>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.2/papaparse.min.js"></script>
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/js/sha256.js"></script>
+<script src="./assets/js/app.js"></script>
 
 </body>
 </html>
