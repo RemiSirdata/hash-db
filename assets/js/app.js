@@ -22,7 +22,7 @@ testForm.addEventListener("submit", function (e) {
 });
 
 function hashEmail(raw) {
-    raw = raw.toLowerCase().trim();
+    raw = raw.toLowerCase().trim().replaceAll(",","").replaceAll(";","");
     let split1 = raw.split("@");
     if (split1.length != 2) {
         return "";
